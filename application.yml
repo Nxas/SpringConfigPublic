@@ -1,0 +1,15 @@
+#文件必须是UTF-8格式, 设置生效配置, 以 --- 分隔配置
+spring:
+  profiles:
+    active:
+    - pro
+---
+spring:
+  profiles: dev
+  application:
+    name: config-dev
+---
+spring:
+  profiles: pro
+  application:
+    name: config-pro
