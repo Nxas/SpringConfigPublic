@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active:
+      - pro
+---
+server:
+  port: 88881
+spring:
+  profiles: pro
+  application:
+    name: config-client-pro
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:1999/eureka/,http://eurekacupcake:1998/eureka/,http://eurekatoothless:1997/eureka/
+---
+server:
+  port: 88882
+spring:
+  profiles: dev
+  application:
+    name: config-client-dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:1999/eureka/,http://eurekacupcake:1998/eureka/,http://eurekatoothless:1997/eureka/
