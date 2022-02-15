@@ -4,7 +4,7 @@ spring:
       - pro
 ---
 server:
-  port: 88881
+  port: 8881
 spring:
   profiles: pro
   application:
@@ -15,7 +15,7 @@ eureka:
       defaultZone: http://eureka:1999/eureka/,http://eurekacupcake:1998/eureka/,http://eurekatoothless:1997/eureka/
 ---
 server:
-  port: 88882
+  port: 8882
 spring:
   profiles: dev
   application:
